@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="815.0" prefWidth="987.0" style="-fx-padding: 50;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dbconnection.HelloController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="545.0" prefWidth="867.0" style="-fx-background: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0, 0, 0); -fx-background-color: lightgreen;">
+         <top>
+            <AnchorPane fx:id="anchorPaneTitle" prefHeight="125.0" prefWidth="1001.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblTitle" alignment="CENTER" layoutX="142.0" layoutY="31.0" prefHeight="64.0" prefWidth="678.0" text="Hello there, what can I do for you today?">
+                     <font>
+                        <Font name="Tenor Sans" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="anchorPaneHead" prefHeight="292.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="anchorPaneContentSI" layoutX="1.0" layoutY="3.0" prefHeight="289.0" prefWidth="409.0">
+                     <children>
+                        <Button fx:id="btnSI" layoutX="256.0" layoutY="185.0" mnemonicParsing="false" onMouseClicked="#exitAnimation" text="Sign In" />
+                        <Label fx:id="lblSINumber" alignment="CENTER_RIGHT" layoutX="79.0" layoutY="64.0" text="Student Number: " />
+                        <TextField fx:id="txtSINumber" layoutX="201.0" layoutY="60.0" />
+                        <PasswordField fx:id="passSI" layoutX="201.0" layoutY="95.0" />
+                        <Label fx:id="lblForgor" layoutX="236.0" layoutY="216.0" text="Forgot Password?" />
+                        <Label fx:id="lblPassSi" alignment="CENTER_RIGHT" layoutX="114.0" layoutY="99.0" text="Password:" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane fx:id="anchorPaneBtns" prefHeight="129.0" prefWidth="847.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnToggle" layoutX="313.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#switchState" text="New Here?" />
+                  <Button fx:id="btnExit" layoutX="536.0" layoutY="52.0" mnemonicParsing="false" text="Nothing, goodbye" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="anchorPaneContentSU" prefHeight="297.0" prefWidth="550.0">
+                     <children>
+                        <Button fx:id="btnFinish" layoutX="336.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#exitAnimation" text="Sign Up" />
+                        <PasswordField fx:id="passPass" layoutX="279.0" layoutY="170.0" />
+                        <TextField fx:id="txtCourse" layoutX="279.0" layoutY="135.0" />
+                        <TextField fx:id="txtLName" layoutX="280.0" layoutY="98.0" />
+                        <TextField fx:id="txtNumber" layoutX="279.0" layoutY="32.0" />
+                        <Label fx:id="lblNumber" alignment="CENTER_RIGHT" layoutX="138.0" layoutY="30.0" prefHeight="23.0" prefWidth="101.0" text="Student Number:" />
+                        <Label fx:id="lblLName" alignment="CENTER_RIGHT" layoutX="139.0" layoutY="99.0" prefHeight="23.0" prefWidth="101.0" text="Last Name:" />
+                        <Label fx:id="lblCourse" alignment="CENTER_RIGHT" layoutX="138.0" layoutY="136.0" prefHeight="23.0" prefWidth="101.0" text="Course: " />
+                        <Label fx:id="lblPass" alignment="CENTER_RIGHT" layoutX="138.0" layoutY="171.0" prefHeight="23.0" prefWidth="101.0" text="Password:" />
+                        <TextField fx:id="txtFname" layoutX="279.0" layoutY="65.0" />
+                        <Label fx:id="lblFName" alignment="CENTER_RIGHT" layoutX="138.0" layoutY="66.0" prefHeight="23.0" prefWidth="101.0" text="First Name:" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPaneHeader" layoutX="137.0" prefHeight="297.0" prefWidth="413.0" style="-fx-background-color: teal">
+                     <children>
+                        <Label fx:id="lblHeader" alignment="CENTER" layoutX="135.0" layoutY="125.0" prefHeight="45.0" prefWidth="144.0" text="Log In">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>
